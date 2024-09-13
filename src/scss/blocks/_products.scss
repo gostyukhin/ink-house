@@ -1,0 +1,237 @@
+.section__cards-products {
+    margin-bottom: 70px;
+}
+
+.cards__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+
+    @include md () {
+        display: block;
+    }
+}
+
+.cards__title {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 44px;
+    color: $dark-grey;
+
+    @include sm () {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 26.4px;
+    }
+
+    @include md () {
+        margin-bottom: 20px;
+    }
+}
+
+.cards__tabs {
+
+    @include sm () {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: auto;
+
+        overflow: auto;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+
+    }
+
+    // margin-right: 32px;
+    // display: flex;
+    // align-items: center;
+    // gap: 32px;
+}
+
+.cards__btn {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23.48px;
+    color: $dark-grey;
+    background-color: $light-gray;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: all .2s ease-in;
+
+    @include sm () {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 21.13px;
+    }
+
+    &:not(:last-child) {
+        margin-right: 32px;
+    }
+
+    &:focus {
+        background-color: $link-focus;
+        color: $dark-grey;
+        outline: 2px solid $green;
+    }
+
+    &:hover {
+        background-color: $link-hover;
+        color: $smoky-white;
+    }
+
+    &:active {
+        background-color: $link-active;
+        color: $smoky-white;
+    }
+}
+
+.cards__product {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+
+    @include lg () {
+
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    @include sm () {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+}
+
+.card {
+    // max-width: 350px;
+    background-color: $platinum;
+    padding: 20px 20px 30px 20px;
+    transition: box-shadow .2s ease-in;
+
+    display: flex;
+    flex-direction: column;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-items: center;
+    overflow: auto;
+
+    &:hover {
+        box-shadow: 15px 15px 8px -3px $light-green;
+        // box-shadow: 5px 5px 20px 5px $light-green;
+    }
+}
+
+.card__image-block {
+    overflow: hidden;
+    // height: 422px;
+    margin-bottom: 20px;
+}
+
+.card__img {
+    transition: transform .2s ease-in;
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+.card__author {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.13px;
+    color: $light-green;
+
+    @include sm () {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18.78px;
+    }
+}
+
+.card__name {
+    margin-bottom: 8px;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 35.22px;
+    color: $dark-grey;
+
+    @include sm () {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 28.18px;
+    }
+}
+
+.card__info {
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.13px;
+    color: $dark-grey;
+
+    @include sm () {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18.78px;
+    }
+}
+
+.card__price {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.18px;
+    color: $green;
+
+    @include sm () {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 23.48px;
+    }
+}
+
+.card__btn {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23.48px;
+    color: $green;
+    border: 1px solid $green;
+    padding: 20px 0;
+    width: 100%;
+    transition: all .2s ease-in;
+    margin-top: auto;
+
+    @include sm () {
+        padding: 14.5px 82px;
+        text-wrap: nowrap;
+        text-align: center;
+    }
+
+    &:focus {
+        background-color: $link-focus;
+        outline: 1px solid $green;
+    }
+
+    &:hover {
+        background-color: $link-hover;
+        color: $smoky-white;
+    }
+
+    &:active {
+        background-color: $link-active;
+        color: $white;
+    }
+}
+
+.off {}

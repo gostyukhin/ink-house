@@ -1,0 +1,46 @@
+.conteiner {
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.open {
+    display: flex !important;
+}
+
+.off {
+    display: none !important;
+}
+
+.on {
+    display: block;
+}
+
+.on__cards {
+    display: grid !important;
+}
+
+.active {
+    background-color: $link-active !important;
+    color: $smoky-white !important;
+    outline: none !important;
+}
+
+.swiper {
+    width: 300px;
+    height: 600px;
+}
+
+.fix {
+    position: fixed;
+    left: 0;
+    right: 0;
+}

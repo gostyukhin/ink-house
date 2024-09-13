@@ -1,0 +1,35 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Ink.House
+        link(rel="icon", href="../../src/img/svg/favicon.svg")
+        link(rel="stylesheet", href="../css/main.css")
+        link(href="../../node_modules/lightbox2/src/css/lightbox.css", rel="stylesheet")
+    body
+        include ./blocks/_basket-popup.pug
+        include ./blocks/_popup.pug
+        include ./blocks/_header.pug
+        main
+            include ./blocks/_intro.pug
+            include ./blocks/_products.pug
+            include ./blocks/_promo.pug
+            include ./blocks/_about-us.pug
+        footer
+            include ./blocks/_footer.pug
+        script 
+            include ../js/burger-menu.js
+        script
+            include ../js/tabs.js
+        script(type="module") 
+            include ../js/cart-count.js
+        script 
+            include ../js/popup.js
+        script(src="../../node_modules/lightbox2/dist/js/lightbox-plus-jquery.js")
+        script 
+            include ../js/basket.js
+        script 
+            include ../js/basket-popup.js
+
+    

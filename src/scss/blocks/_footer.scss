@@ -1,0 +1,249 @@
+.footer {
+    background-color: $platinum;
+    padding-top: 23px;
+    padding-bottom: 23px;
+}
+
+.conteiner__grid {
+    display: grid;
+    grid-template-areas: "logo nav nav nav social"
+        "phone nav nav nav copy";
+
+    @include lg () {
+        grid-template-areas: "logo . phone"
+            "nav . social"
+            "nav . copy";
+        gap: 10px;
+    }
+
+    @include md () {
+        grid-template-areas: "logo . phone"
+            "nav nav nav"
+            ". social ."
+            ". copy .";
+        gap: 15px;
+    }
+
+    @include sm () {
+        grid-template-areas: "logo ."
+            "phone ."
+            "nav ."
+            "social ."
+            "copy .";
+    }
+}
+
+.footer__logo {
+    grid-area: logo;
+
+    @include md () {
+        grid-area: logo;
+    }
+}
+
+.footer__phone {
+    grid-area: phone;
+    align-self: end;
+
+    @include md () {
+        grid-area: phone;
+        justify-self: end;
+    }
+
+    @include sm () {
+        justify-self: baseline;
+    }
+}
+
+.footer__phone-number {
+    margin-bottom: 8px;
+
+    a {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 23.48px;
+        color: $dark-grey;
+        transition: all .2s ease-in;
+
+        @include sm () {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 18.78px;
+        }
+
+        &:hover {
+            color: $link-hover;
+        }
+
+        &:active {
+            color: $link-active;
+        }
+    }
+}
+
+.footer__phone-info {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.13px;
+    color: $light-green;
+
+    @include lg () {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 21.13px;
+    }
+
+    @include sm () {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18.78px;
+    }
+}
+
+.footer__nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    grid-area: nav;
+
+    @include lg () {
+        gap: 80px;
+    }
+
+    @include md () {
+        grid-area: nav;
+        justify-content: space-between;
+        border-bottom: 1px solid $md-grey;
+        padding-bottom: 16px;
+    }
+
+    @include sm () {
+        gap: 40px;
+    }
+}
+
+.footer__nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.footer__nav-title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23.48px;
+    color: $dark-grey;
+
+    @include sm () {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18.78px;
+    }
+}
+
+.footer__nav-link {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    color: $light-green;
+    transition: all .2s ease-in;
+
+    @include lg () {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+    }
+
+    @include sm () {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18.78px;
+    }
+
+    &:focus {
+        background-color: &link-focus;
+    }
+
+    &:hover {
+        color: $link-hover;
+    }
+
+    &:active {
+        color: $link-active;
+    }
+}
+
+.footer__social {
+    display: flex;
+    gap: 15px;
+    grid-area: social;
+    justify-self: end;
+
+    @include md () {
+        grid-area: social;
+        justify-content: center;
+    }
+}
+
+.footer__social-link {
+
+    path {
+        transition: all .2s ease-in;
+    }
+
+    &:focus path {
+        background-color: &link-focus;
+    }
+
+    &:hover path {
+        fill: $link-hover;
+    }
+
+    &:active path {
+        fill: $link-active;
+    }
+}
+
+.footer__copy {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14.4px;
+    color: $light-green;
+    justify-self: start;
+    grid-area: copy;
+    margin-top: -20px;
+    justify-self: end;
+
+    p {
+        text-wrap: nowrap;
+
+        @include lg () {
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 14.4px;
+        }
+
+        @include sm () {
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 14.4px;
+        }
+    }
+
+
+    :first-child {
+        margin-bottom: 6px;
+    }
+
+    @include lg () {
+        margin-top: -50px;
+    }
+
+    @include md () {
+        grid-area: copy;
+        justify-self: center;
+        margin-top: -5px;
+        display: flex;
+        gap: 10px;
+    }
+}

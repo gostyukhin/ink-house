@@ -1,0 +1,230 @@
+.header {
+    padding: 32px 15px;
+    background-color: $platinum;
+
+    @include md () {
+        padding: 16px 33px;
+    }
+
+    @include sm () {
+        background: linear-gradient(180deg, #FFF 0px, #FFF 68px, $platinum 68px, $platinum 100%);
+        padding: 16px 15px;
+    }
+}
+
+.header__menu {
+    display: flex;
+    align-items: center;
+
+    @include md () {
+        display: block;
+    }
+
+
+}
+
+.header__logo {
+    margin-right: auto;
+
+    position: relative;
+
+    img {
+        padding-right: 15px;
+    }
+
+    @include md () {
+        text-align: center;
+
+        &::after {
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 1px;
+            background-color: $md-grey;
+            bottom: -16px;
+            left: 0;
+            right: 0;
+        }
+    }
+
+    @include sm () {
+        &::after {
+            display: none;
+        }
+    }
+
+
+}
+
+
+.header__nav {
+    display: flex;
+
+    @include md () {
+        margin-top: 32px;
+        justify-content: space-between;
+    }
+}
+
+.header__nav-list {
+    display: flex;
+    gap: 60px;
+
+    @include sm () {
+        display: none;
+    }
+}
+
+.header__nav-link {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23.48px;
+    color: $dark-grey;
+    margin-right: 0;
+    transition: all .2s ease-in;
+
+    @include lg () {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 21.13px;
+    }
+
+    &:focus {
+        background-color: &link-focus;
+    }
+
+    &:hover {
+        color: $link-hover;
+    }
+
+    &:active {
+        color: $link-active;
+    }
+
+
+}
+
+.header__cart {
+    position: relative;
+    margin-left: 60px;
+
+    & .header__cart-icon path {
+        transition: all .2s ease-in;
+    }
+
+    &:focus path {
+        background-color: &link-focus;
+    }
+
+    &:hover path {
+        stroke: $link-hover;
+    }
+
+    &:active path {
+        stroke: $link-active;
+    }
+}
+
+.header__cart-count {
+    position: absolute;
+    background-color: $green;
+    color: $white;
+    border-radius: 50%;
+    color: #fff;
+    display: inline-block;
+    height: 13px;
+    font-size: 12px;
+    padding-inline: 3px;
+    line-height: 12px;
+    font-weight: 700;
+    top: 1px;
+    right: 8px;
+}
+
+// =====================================  Mobile menu ===========================
+
+.burger__menu-open {
+    width: 25px;
+    height: 30px;
+    position: relative;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    display: none;
+
+    @include sm () {
+        display: block;
+    }
+}
+
+.burger__menu-open span {
+    display: block;
+    top: 12px;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: $menu-burger;
+    left: 0px;
+    border-radius: 10px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.burger__menu-open span:nth-child(1) {
+    transform: translateY(-8px);
+    transform-origin: left center;
+}
+
+.burger__menu-open span:nth-child(2) {
+    transform-origin: left center;
+}
+
+.burger__menu-open span:nth-child(3) {
+    transform: translateY(8px);
+    transform-origin: left center;
+}
+
+.burger__menu-open.open span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 4px;
+    left: 0px;
+}
+
+.burger__menu-open.open span:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+}
+
+.burger__menu-open.open span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 22px;
+    left: 0px;
+}
+
+.mobile__menu {
+    padding: 30px 15px 15px 15px;
+    display: none;
+    flex-direction: column;
+    height: 800px;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    background-color: $platinum;
+}
+
+.mobile__nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.mobile__nav-link {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.13px;
+    color: $dark-grey;
+}

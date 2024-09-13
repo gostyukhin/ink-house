@@ -1,0 +1,60 @@
+.about {
+    margin-bottom: 70px;
+}
+
+.about__flex {
+    display: flex;
+    gap: 30px;
+
+    @include lg () {
+        display: block;
+    }
+}
+
+.about__info {
+    padding-bottom: 44px;
+    align-self: flex-end;
+
+    @include lg () {
+        margin-top: 40px;
+    }
+}
+
+.about__title {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 44px;
+    margin-bottom: 20px;
+
+    @include md () {
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 33px;
+    }
+}
+
+.about__text {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    margin-bottom: 20px;
+
+    @include md () {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+    }
+}
+
+.about__list {
+    display: flex;
+    gap: 30px;
+}
+
+.about__link-icon {
+    transition: transform .5s ease-in;
+
+    &:hover {
+        transform: rotateY(180deg);
+    }
+}
