@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ink.House</title>
+    <link rel="icon" href="../../src/img/svg/favicon.svg">
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="../../node_modules/lightbox2/src/css/lightbox.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="basket__modal">
+      <div class="basket__modal-box">
+        <div class="basket__close-modal"> <span> </span><span></span></div>
+        <div class="basket__card-box"></div>
+        <button class="basket__modal-pay">Оформить заказ</button>
+      </div>
+    </div>
+    <div class="modal">
+      <div class="modal__box">
+        <div class="close__modal"> <span> </span><span></span></div>
+        <h1 class="modal__title">Товар успешно добавлен в корзину </h1>
+      </div>
+    </div>
+    <header class="header"> 
+      <div class="conteiner">
+        <div class="header__menu"> 
+          <div class="header__logo"> <a href="index.html"> <img class="header__logo" src="../../src/img/svg/logo.svg" alt="Ink.House logo"></a></div>
+          <nav class="header__nav">
+            <ul class="header__nav-list"> 
+              <li class="header__nav-item"> <a class="header__nav-link" href="../html/#products">Репродукции</a></li>
+              <li class="header__nav-item"> <a class="header__nav-link" href="">Новинки</a></li>
+              <li class="header__nav-item"> <a class="header__nav-link" href="../html/#about-us">О нас</a></li>
+            </ul>
+            <button class="burger__menu-open"><span></span><span></span><span> </span></button><a class="header__cart" href="#!">
+              <svg class="header__cart-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_3_994)">
+                  <path d="M9.25001 21.1667C9.75627 21.1667 10.1667 20.7563 10.1667 20.25C10.1667 19.7438 9.75627 19.3334 9.25001 19.3334C8.74375 19.3334 8.33334 19.7438 8.33334 20.25C8.33334 20.7563 8.74375 21.1667 9.25001 21.1667Z" stroke="#2C2D35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M19.3333 21.1667C19.8396 21.1667 20.25 20.7563 20.25 20.25C20.25 19.7438 19.8396 19.3334 19.3333 19.3334C18.8271 19.3334 18.4167 19.7438 18.4167 20.25C18.4167 20.7563 18.8271 21.1667 19.3333 21.1667Z" stroke="#2C2D35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M1.91666 1.91663H5.58332L8.03999 14.1908C8.12381 14.6128 8.35341 14.9919 8.68857 15.2617C9.02374 15.5315 9.44313 15.6749 9.87332 15.6666H18.7833C19.2135 15.6749 19.6329 15.5315 19.9681 15.2617C20.3032 14.9919 20.5328 14.6128 20.6167 14.1908L22.0833 6.49996H6.49999" stroke="#2C2D35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+                <defs>
+                  <clippath id="clip0_3_994">
+                    <rect width="22" height="22" fill="white" transform="translate(1 1)"></rect>
+                  </clippath>
+                </defs>
+              </svg>
+              <div class="header__cart-count off">0</div></a>
+          </nav>
+        </div>
+      </div>
+      <div class="mobile__menu"> 
+        <ul class="mobile__nav-list"> 
+          <li class="mobile__nav-item"> <a class="mobile__nav-link" href="../html/#products">Репродукции</a></li>
+          <li class="mobile__nav-item"> <a class="mobile__nav-link" href="">Новинки</a></li>
+          <li class="mobile__nav-item"> <a class="mobile__nav-link" href="../html/#about-us">О нас </a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="section__intro">
+        <div class="conteiner"> 
+          <div class="intro__flex-conteiner">
+            <div class="intro__img-conteiner"> <img class="intro__img" src="../../src/img/header-intro.png" srcset="../../src/img/header-intro@2x.png" alt="Адаптивное изображение."></div>
+            <div class="intro__info">
+              <h1 class="intro__title">Реплики картин от <span>Ink. House</span></h1>
+              <p class="intro__text">Высокое качество отрисовки на плотной бумаге или льняном холсте. Редкие произведения, доступные цены.</p><a class="intro__link-products" href="#!">Продукция</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section__cards-products" id="products">
+        <div class="conteiner">
+          <div class="cards__nav">
+            <h2 class="cards__title">Репродукции</h2>
+            <div class="cards__tabs">
+              <button class="cards__btn active" data-tab="#france">Франция</button>
+              <button class="cards__btn" data-tab="#germany">Германия</button>
+              <button class="cards__btn" data-tab="#england">Англия</button>
+            </div>
+          </div>
+          <div class="cards__product" id="france"> 
+            <div class="card" id="1" data-id="1">
+              <div class="card__image-block"><a href="../../src/img/products/france/card-1@2x.jpg" data-lightbox="image-1"> <img class="card__img" src="../../src/img/products/france/card-1.jpg" srcset="../../src/img/products/france/card-1@2x.jpg 2x" alt=""></a></div>
+              <p class="card__author">Марсель Руссо</p>
+              <p class="card__name">Охота Амура</p>
+              <p class="card__info">Холст, масло (50х80) </p>
+              <p class="card__price">14 500 руб</p>
+              <button class="card__btn" data-basket="1">В корзину</button>
+            </div>
+            <div class="card" id="2" data-id="2">
+              <div class="card__image-block"><a href="../../src/img/products/france/card-2@2x.jpg" data-lightbox="image-2"> <img class="card__img" src="../../src/img/products/france/card-2.jpg" srcset="../../src/img/products/france/card-2@2x.jpg 2x" alt=""></a></div>
+              <p class="card__author">Анри Селин</p>
+              <p class="card__name">Дама с собачкой</p>
+              <p class="card__info">Акрил, бумага (50х80)  </p>
+              <p class="card__price">16 500 руб</p>
+              <button class="card__btn" data-basket="2">В корзину</button>
+            </div>
+            <div class="card" id="3" data-id="3">
+              <div class="card__image-block"><a href="../../src/img/products/france/card-3@2x.jpg" data-lightbox="image-3"> <img class="card__img" src="../../src/img/products/france/card-3.jpg" srcset="../../src/img/products/france/card-3@2x.jpg 2x" alt=""></a></div>
+              <p class="card__author">Франсуа Дюпон</p>
+              <p class="card__name">Процедура</p>
+              <p class="card__info">Цветная литография (40х60)  </p>
+              <p class="card__price">20 000 руб</p>
+              <button class="card__btn" data-basket="3">В корзину</button>
+            </div>
+            <div class="card" id="4" data-id="4">
+              <div class="card__image-block"><a href="../../src/img/products/france/card-4@2x.jpg" data-lightbox="image-4"> <img class="card__img" src="../../src/img/products/france/card-4.jpg" srcset="../../src/img/products/france/card-4@2x.jpg 2x" alt="" data-title="My caption"></a></div>
+              <p class="card__author">Луи Детуш</p>
+              <p class="card__name">Роза</p>
+              <p class="card__info">Бумага, акрил (50х80)  </p>
+              <p class="card__price">12 000 руб</p>
+              <button class="card__btn" data-basket="4">В корзину</button>
+            </div>
+            <div class="card" id="5" data-id="5">
+              <div class="card__image-block"><a href="../../src/img/products/france/card-5@2x.jpg" data-lightbox="image-5"> <img class="card__img" src="../../src/img/products/france/card-5.jpg" srcset="../../src/img/products/france/card-5@2x.jpg 2x" alt=""></a></div>
+              <p class="card__author">Франсуа Дюпон</p>
+              <p class="card__name">Птичья трапеза</p>
+              <p class="card__info">Цветная литография (40х60)  </p>
+              <p class="card__price">22 500 руб</p>
+              <button class="card__btn" data-basket="5">В корзину</button>
+            </div>
+            <div class="card" id="6" data-id="6">
+              <div class="card__image-block"><a href="../../src/img/products/france/card-6@2x.jpg" data-lightbox="image-6"> <img class="card__img" src="../../src/img/products/france/card-6.jpg" srcset="../../src/img/products/france/card-6@2x.jpg 2x" alt=""></a></div>
+              <p class="card__author">Пьер Моранж</p>
+              <p class="card__name">Пейзаж с рыбой</p>
+              <p class="card__info">Цветная литография (40х60)  </p>
+              <p class="card__price">20 000 руб</p>
+              <button class="card__btn" data-basket="6">В корзину</button>
+            </div>
+          </div>
+          <div class="cards__product off" id="germany">
+            <div class="card" id="7" data-id="7">
+              <div class="card__image-block"><a href="../../src/img/products/germany/card-1@2x.jpg" data-lightbox="image-7"> <img class="card__img" src="../../src/img/products/germany/card-1.jpg" srcset="../../src/img/products/germany/card-1@2x.jpg 2x" alt=""></a></div>
+              <p class="card__author">Курт Вернер</p>
+              <p class="card__name">Над городом</p>
+              <p class="card__info">Цветная литография (40х60) </p>
+              <p class="card__price">16 000 руб</p>
+              <button class="card__btn" data-basket="7">В корзину</button>
+            </div>
+            <div class="card" id="8" data-id="8">
+              <div class="card__image-block"><a href="../../src/img/products/germany/card-2@2x.jpg" data-lightbox="image-8"> <img class="card__img" src="../../src/img/products/germany/card-2.jpg" srcset="../../src/img/products/germany/card-2@2x.jpg 2x" alt=""></a></div>
+              <p class="card__author">Макс Рихтер</p>
+              <p class="card__name">Птенцы</p>
+              <p class="card__info">Холст, масло (50х80)   </p>
+              <p class="card__price">14 500 руб</p>
+              <button class="card__btn" data-basket="8">В корзину</button>
+            </div>
+            <div class="card" id="9" data-id="9">
+              <div class="card__image-block"><a href="../../src/img/products/germany/card-3@2x.jpg" data-lightbox="image-9"> <img class="card__img" src="../../src/img/products/germany/card-3.jpg" srcset="../../src/img/products/germany/card-3@2x.jpg 2x" alt=""></a></div>
+              <p class="card__author">Мартин Майер</p>
+              <p class="card__name">Среди листьев</p>
+              <p class="card__info">Цветная литография (40х60)  </p>
+              <p class="card__price">20 000 руб</p>
+              <button class="card__btn" data-basket="9">В корзину</button>
+            </div>
+            <div class="card" id="10" data-id="10">
+              <div class="card__image-block"><a href="../../src/img/products/germany/card-4@2x.jpg" data-lightbox="image-10"> <img class="card__img" src="../../src/img/products/germany/card-4.jpg" srcset="../../src/img/products/germany/card-4@2x.jpg 2x" alt=""></a></div>
+              <p class="card__author">Герман Беккер</p>
+              <p class="card__name">Яркая птица</p>
+              <p class="card__info">Цветная литография (40х60)   </p>
+              <p class="card__price">13 000 руб</p>
+              <button class="card__btn" data-basket="10">В корзину</button>
+            </div>
+            <div class="card" id="11" data-id="11">
+              <div class="card__image-block"><a href="../../src/img/products/germany/card-5@2x.jpg" data-lightbox="image-11"> <img class="card__img" src="../../src/img/products/germany/card-5.jpg" srcset="../../src/img/products/germany/card-5@2x.jpg 2x" alt=""></a></div>
+              <p class="card__author">Вульф Бауэр</p>
+              <p class="card__name">Дятлы</p>
+              <p class="card__info">Бумага, акрил (50х80)   </p>
+              <p class="card__price">20 000 руб</p>
+              <button class="card__btn" data-basket="11">В корзину</button>
+            </div>
+            <div class="card" id="12" data-id="12">
+              <div class="card__image-block"><a href="../../src/img/products/germany/card-6@2x.jpg" data-lightbox="image-12"> <img class="card__img" src="../../src/img/products/germany/card-6.jpg" srcset="../../src/img/products/germany/card-6@2x.jpg 2x" alt=""></a></div>
+              <p class="card__author">Вальтер Хартманн</p>
+              <p class="card__name">Большие воды</p>
+              <p class="card__info">Бумага, акрил (50х80)   </p>
+              <p class="card__price">23 000 руб</p>
+              <button class="card__btn" data-basket="12">В корзину</button>
+            </div>
+          </div>
+          <div class="cards__product off" id="england">
+            <div class="card" id="13" data-id="13">
+              <div class="card__image-block"><a href="../../src/img/products/england/card-1@2x.jpg" data-lightbox="image-13"> <img class="card__img" src="../../src/img/products/england/card-1.jpg" srcset="../../src/img/products/england/card-1@2x.jpg 2x" alt=""></a></div>
+              <p class="card__author">Пол Смит</p>
+              <p class="card__name">Дикий зверь</p>
+              <p class="card__info">Акварель, бумага (50х80)</p>
+              <p class="card__price">19 500 руб</p>
+              <button class="card__btn" data-basket="13">В корзину</button>
+            </div>
+            <div class="card" id="14" data-id="14">
+              <div class="card__image-block"><a href="../../src/img/products/england/card-2@2x.jpg" data-lightbox="image-14"><img class="card__img" src="../../src/img/products/england/card-2.jpg" srcset="../../src/img/products/england/card-2@2x.jpg 2x" alt=""></a></div>
+              <p class="card__author">Джон Уайт</p>
+              <p class="card__name">Скалистый берег</p>
+              <p class="card__info">Цветная литография (40х60)   </p>
+              <p class="card__price">17 500 руб</p>
+              <button class="card__btn" data-basket="14">В корзину</button>
+            </div>
+            <div class="card" id="15" data-id="15">
+              <div class="card__image-block"><a href="../../src/img/products/england/card-3@2x.jpg" data-lightbox="image-15"><img class="card__img" src="../../src/img/products/england/card-3.jpg" srcset="../../src/img/products/england/card-3@2x.jpg 2x" alt=""></a></div>
+              <p class="card__author">Джим Уотсон</p>
+              <p class="card__name">Река и горы</p>
+              <p class="card__info">Акварель, бумага (50х80)  </p>
+              <p class="card__price">20 500 руб</p>
+              <button class="card__btn" data-basket="15">В корзину</button>
+            </div>
+            <div class="card" id="16" data-id="16">
+              <div class="card__image-block"><a href="../../src/img/products/england/card-4@2x.jpg" data-lightbox="image-16"><img class="card__img" src="../../src/img/products/england/card-4.jpg" srcset="../../src/img/products/england/card-4@2x.jpg 2x" alt=""></a></div>
+              <p class="card__author">Юджин Зиллион</p>
+              <p class="card__name">Белый попугай</p>
+              <p class="card__info">Цветная литография (40х60)   </p>
+              <p class="card__price">15 500 руб</p>
+              <button class="card__btn" data-basket="16">В корзину</button>
+            </div>
+            <div class="card" id="17" data-id="17">
+              <div class="card__image-block"><a href="../../src/img/products/england/card-5@2x.jpg" data-lightbox="image-17"><img class="card__img" src="../../src/img/products/england/card-5.jpg" srcset="../../src/img/products/england/card-5@2x.jpg 2x" alt=""></a></div>
+              <p class="card__author">Эрик Гиллман</p>
+              <p class="card__name">Ночная рыба</p>
+              <p class="card__info">Бумага, акрил (50х80)  </p>
+              <p class="card__price">12 500 руб</p>
+              <button class="card__btn" data-basket="17">В корзину</button>
+            </div>
+            <div class="card" id="18" data-id="18">
+              <div class="card__image-block"><a href="../../src/img/products/england/card-6@2x.jpg" data-lightbox="image-18"><img class="card__img" src="../../src/img/products/england/card-6.jpg" srcset="../../src/img/products/england/card-6@2x.jpg 2x" alt=""></a></div>
+              <p class="card__author">Альфред Барр</p>
+              <p class="card__name">Рыжий кот</p>
+              <p class="card__info">Цветная литография (40х60)   </p>
+              <p class="card__price">21 000 руб</p>
+              <button class="card__btn" data-basket="18">В корзину</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section__promo"> 
+        <div class="conteiner">
+          <div class="section__promo-block">
+            <svg class="promo__star-icon" width="80" height="79" viewBox="0 0 80 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M46.6407 21.9227L58.5227 11.1781L53.685 26.4498L52.9462 28.782L55.3599 28.3827L71.1646 25.7676L58.8384 35.9995L56.956 37.5621L59.2023 38.531L73.9119 44.8758L58.0107 46.8194L55.5823 47.1162L56.9482 49.1458L65.8925 62.436L51.4647 55.4741L49.2614 54.4109L49.3132 56.8568L49.6523 72.8729L41.2788 59.2159L40 57.1303L38.7212 59.2159L30.3477 72.8729L30.6868 56.8568L30.7386 54.4109L28.5353 55.4741L14.1075 62.436L23.0518 49.1458L24.4177 47.1162L21.9893 46.8194L6.08807 44.8758L20.7977 38.531L23.044 37.5621L21.1616 35.9995L8.83541 25.7676L24.6401 28.3827L27.0538 28.782L26.315 26.4498L21.4773 11.1781L33.3593 21.9227L35.1738 23.5636L35.8132 21.2022L40 5.73935L44.1868 21.2022L44.8262 23.5636L46.6407 21.9227Z" stroke="#EEDB6D" stroke-width="3"></path>
+            </svg>
+            <h3 class="promo__title">Новая коллекция французских авторов</h3>
+          </div>
+          <div class="promo__text-block">
+            <p class="promo__text">Сложно сказать, почему акционеры крупнейших компаний призывают нас к новым свершениям, которые, в свою очередь, должны быть заблокированы в рамках своих собственных рациональных ограничений. </p>
+            <p class="promo__text">Принимая во внимание показатели успешности, граница обучения кадров предопределяет высокую востребованность направлений прогрессивного развития.</p>
+          </div><a class="promo__link" href="#!">Ознакомиться </a>
+        </div>
+      </section>
+      <section class="about" id="about-us">
+        <div class="conteiner"> 
+          <div class="about__flex"> <img class="about__img" src="../../src/img/about-img.png" srcset="../../src/img/about-img@2x.png 2x" alt="">
+            <div class="about__info"> 
+              <h3 class="about__title">Наша команда</h3>
+              <p class="about__text">Значимость этих проблем настолько очевидна, что базовый вектор развития позволяет оценить значение экспериментов, поражающих по своей масштабности и грандиозности. Мы вынуждены отталкиваться от того, что консультация с широким активом.</p>
+              <ul class="about__list"> 
+                <li class="about__item"> <a class="about__link" href="#!"><img class="about__link-icon" src="../../src/img/team/team-1.png" srcset="../../src/img/team/team-1@2x.png 2x" alt=""></a></li>
+                <li class="about__item"> <a class="about__link" href="#!"><img class="about__link-icon" src="../../src/img/team/team-2.png" srcset="../../src/img/team/team-2@2x.png 2x" alt=""></a></li>
+                <li class="about__item"> <a class="about__link" href="#!"><img class="about__link-icon" src="../../src/img/team/team-3.png" srcset="../../src/img/team/team-3@2x.png 2x" alt=""></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <footer class="footer">
+        <div class="conteiner"> 
+          <div class="conteiner__grid"> 
+            <div class="footer__logo"> <a class="header__logo-link" href="index.html"><img src="../../src/img/svg/logo.svg" alt=""></a></div>
+            <div class="footer__phone"> 
+              <p class="footer__phone-number"> <a href="tel:+79995435454">+7 (999) 543-54-54</a></p>
+              <p class="footer__phone-info">Мастерская</p>
+            </div>
+            <div class="footer__nav"> 
+              <ul class="footer__nav-list"> 
+                <li class="footer__nav-item">
+                  <h4 class="footer__nav-title">Репродукции</h4>
+                </li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="#!">Франция</a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="#!">Германия</a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="#!">Англия</a></li>
+              </ul>
+              <ul class="footer__nav-list"> 
+                <li class="footer__nav-item">
+                  <h4 class="footer__nav-title">Новинки</h4>
+                </li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="#!">2021</a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="#!">2020</a></li>
+              </ul>
+              <ul class="footer__nav-list"> 
+                <li class="footer__nav-item">
+                  <h4 class="footer__nav-title">О нас</h4>
+                </li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="#!">Художники</a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="#abouts-us">Менеджеры</a></li>
+              </ul>
+            </div>
+            <div class="footer__social"><a class="footer__social-link" href=""> 
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_10_333)">
+                    <path d="M15.402 21V14.034H17.735L18.084 11.326H15.402V9.598C15.402 8.814 15.62 8.279 16.744 8.279H18.178V5.857C17.4838 5.78334 16.7861 5.74762 16.088 5.75C14.021 5.75 12.606 7.012 12.606 9.33V11.326H10.268V14.034H12.606V21H4C3.73478 21 3.48043 20.8946 3.29289 20.7071C3.10536 20.5196 3 20.2652 3 20V4C3 3.73478 3.10536 3.48043 3.29289 3.29289C3.48043 3.10536 3.73478 3 4 3H20C20.2652 3 20.5196 3.10536 20.7071 3.29289C20.8946 3.48043 21 3.73478 21 4V20C21 20.2652 20.8946 20.5196 20.7071 20.7071C20.5196 20.8946 20.2652 21 20 21H15.402Z" fill="#2C2D35">
+                      <defs>
+                        <clippath id="clip0_10_333">
+                          <rect width="24" height="24" fill="white"></rect>
+                        </clippath>
+                      </defs>
+                    </path>
+                  </g>
+                </svg></a><a class="footer__social-link" href="">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_10_334)">
+                    <path d="M12 2C14.717 2 15.056 2.01 16.122 2.06C17.187 2.11 17.912 2.277 18.55 2.525C19.21 2.779 19.766 3.123 20.322 3.678C20.8305 4.1779 21.224 4.78259 21.475 5.45C21.722 6.087 21.89 6.813 21.94 7.878C21.987 8.944 22 9.283 22 12C22 14.717 21.99 15.056 21.94 16.122C21.89 17.187 21.722 17.912 21.475 18.55C21.2247 19.2178 20.8311 19.8226 20.322 20.322C19.822 20.8303 19.2173 21.2238 18.55 21.475C17.913 21.722 17.187 21.89 16.122 21.94C15.056 21.987 14.717 22 12 22C9.283 22 8.944 21.99 7.878 21.94C6.813 21.89 6.088 21.722 5.45 21.475C4.78233 21.2245 4.17753 20.8309 3.678 20.322C3.16941 19.8222 2.77593 19.2175 2.525 18.55C2.277 17.913 2.11 17.187 2.06 16.122C2.013 15.056 2 14.717 2 12C2 9.283 2.01 8.944 2.06 7.878C2.11 6.812 2.277 6.088 2.525 5.45C2.77524 4.78218 3.1688 4.17732 3.678 3.678C4.17767 3.16923 4.78243 2.77573 5.45 2.525C6.088 2.277 6.812 2.11 7.878 2.06C8.944 2.013 9.283 2 12 2ZM12 7C10.6739 7 9.40215 7.52678 8.46447 8.46447C7.52678 9.40215 7 10.6739 7 12C7 13.3261 7.52678 14.5979 8.46447 15.5355C9.40215 16.4732 10.6739 17 12 17C13.3261 17 14.5979 16.4732 15.5355 15.5355C16.4732 14.5979 17 13.3261 17 12C17 10.6739 16.4732 9.40215 15.5355 8.46447C14.5979 7.52678 13.3261 7 12 7ZM18.5 6.75C18.5 6.41848 18.3683 6.10054 18.1339 5.86612C17.8995 5.6317 17.5815 5.5 17.25 5.5C16.9185 5.5 16.6005 5.6317 16.3661 5.86612C16.1317 6.10054 16 6.41848 16 6.75C16 7.08152 16.1317 7.39946 16.3661 7.63388C16.6005 7.8683 16.9185 8 17.25 8C17.5815 8 17.8995 7.8683 18.1339 7.63388C18.3683 7.39946 18.5 7.08152 18.5 6.75ZM12 9C12.7956 9 13.5587 9.31607 14.1213 9.87868C14.6839 10.4413 15 11.2044 15 12C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 15 12 15C11.2044 15 10.4413 14.6839 9.87868 14.1213C9.31607 13.5587 9 12.7956 9 12C9 11.2044 9.31607 10.4413 9.87868 9.87868C10.4413 9.31607 11.2044 9 12 9Z" fill="#2C2D35">
+                      <defs>
+                        <clippath id="clip0_10_334">
+                          <rect width="24" height="24" fill="white"></rect>
+                        </clippath>
+                      </defs>
+                    </path>
+                  </g>
+                </svg></a><a class="footer__social-link" href="">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_10_337)">
+                    <path d="M21.543 6.498C22 8.28 22 12 22 12C22 12 22 15.72 21.543 17.502C21.289 18.487 20.546 19.262 19.605 19.524C17.896 20 12 20 12 20C12 20 6.107 20 4.395 19.524C3.45 19.258 2.708 18.484 2.457 17.502C2 15.72 2 12 2 12C2 12 2 8.28 2.457 6.498C2.711 5.513 3.454 4.738 4.395 4.476C6.107 4 12 4 12 4C12 4 17.896 4 19.605 4.476C20.55 4.742 21.292 5.516 21.543 6.498ZM10 15.5L16 12L10 8.5V15.5Z" fill="#2C2D35">
+                      <defs>
+                        <clippath id="clip0_10_337">
+                          <rect width="24" height="24" fill="white"></rect>
+                        </clippath>
+                      </defs>
+                    </path>
+                  </g>
+                </svg></a></div>
+            <div class="footer__copy"> 
+              <p>Ink. House ®</p>
+              <p>All rights reserved</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </footer>
+    <script>
+       const menuMobile = document.querySelector('.mobile__menu');
+const burgerMenu = document.querySelector('.burger__menu-open');
+const cart = document.querySelector('.header__cart');
+const body = document.querySelector('body');
+
+burgerMenu.addEventListener('click', function () {
+
+    burgerMenu.classList.toggle('open');
+    menuMobile.classList.toggle('open');
+
+    if (menuMobile.classList.contains('open')) {
+        cart.classList.add('off');
+        body.classList.add('fix');
+    } else {
+        cart.classList.remove('off');
+        body.classList.remove('fix');
+    }
+})
+
+const linkMenuBurger = document.querySelectorAll('.mobile__nav-link');
+linkMenuBurger.forEach((item) => {
+    item.addEventListener('click', function () {
+        menuMobile.classList.remove('open');
+        burgerMenu.classList.remove('open');
+        cart.classList.remove('off');
+        body.classList.remove('fix');
+    })
+})
+
+
+
+
+    </script>
+    <script>const btn = document.querySelectorAll('.cards__btn');
+const tabsItems = document.querySelectorAll('.cards__product');
+
+btn.forEach((item) => {
+    item.addEventListener('click', function () {
+        let currnetBtn = item;
+        let tabId = currnetBtn.getAttribute("data-tab");
+        let currentTab = document.querySelector(tabId);
+        console.log(tabId);
+
+        btn.forEach((item) => {
+            item.classList.remove('active');
+        });
+
+        tabsItems.forEach((item) => {
+            item.classList.remove('on__cards')
+            item.classList.add('off')
+        });
+
+        currnetBtn.classList.add('active');
+        currentTab.classList.add('on__cards')
+    });
+})
+    </script>
+    <script type="module">
+       </script>
+    <script>
+       const popup = document.querySelector('.modal');
+const cardBtnPopup = document.querySelectorAll('.card__btn');
+const closeModal = document.querySelector('.close__modal')
+const bodyPopup = document.querySelector('body');
+
+
+cardBtnPopup.forEach((item) => {
+    item.addEventListener('click', function () {
+
+        popup.classList.add('open')
+        if (popup.classList.contains('open')) {
+            bodyPopup.classList.add('scroll-off')
+        }
+    })
+
+    closeModal.addEventListener('click', function () {
+        popup.classList.remove('open');
+        bodyPopup.classList.remove('scroll-off')
+
+    })
+})
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    <script src="../../node_modules/lightbox2/dist/js/lightbox-plus-jquery.js"></script>
+    <script>
+       const popupBasket = document.querySelector('.basket__modal');
+const cardBtnPopupBasket = document.querySelectorAll('.header__cart-icon');
+const closeModalBasket = document.querySelector('.basket__close-modal')
+const bodyPopupBasket = document.querySelector('body');
+
+
+cardBtnPopupBasket.forEach((item) => {
+    item.addEventListener('click', function () {
+
+        popupBasket.classList.add('open');
+        
+        if (popupBasket.classList.contains('open')) {
+            bodyPopupBasket.classList.add('scroll-off')
+        }
+    })
+
+    closeModalBasket.addEventListener('click', function () {
+        popupBasket.classList.remove('open');
+        bodyPopupBasket.classList.remove('scroll-off')
+
+    })
+})
+
+
+
+    </script>
+    <script>
+       const wrapper = document.querySelector('.basket__card-box');
+const basketCount = document.querySelector('.header__cart-count');
+
+window.addEventListener('click', function (event) {
+
+    if (event.target.hasAttribute('data-basket')) {
+
+        const card = event.target.closest('.card');
+
+        const productInfo = {
+            price: card.querySelector('.card__price').innerText,
+            imgSrc: card.querySelector('.card__img').getAttribute('src'),
+            title: card.querySelector('.card__name').innerText,
+        }
+
+        const cartItemHTML = `
+        <div class="basket__card">
+            <h1 class="basket__modal-title">${productInfo.title}</h1>
+            <p class="basket__modal-price">${productInfo.price}</p> 
+             <img src="${productInfo.imgSrc}">
+        </div>
+        `;
+
+        wrapper.insertAdjacentHTML('beforeend', cartItemHTML);
+
+        const countBasketProduct = this.document.querySelectorAll('.basket__card');
+
+
+        if (countBasketProduct.length >= 1) {
+            basketCount.classList.remove('off');
+            basketCount.textContent = countBasketProduct.length;
+        }
+    }
+})
+
+
+    </script>
+  </body>
+</html>
